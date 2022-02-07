@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import Directory from './components/DirectoryComponent';
 import './App.css';
+import { PARKS } from './shared/parks'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        parks: PARKS
+      }
+    }
+  render() {
+      return (
+          <div className="App">
+              <Navbar dark color="success">
+              <div className="container">
+                  <NavbarBrand href="/">NationalParks</NavbarBrand>
+              </div>
+              </Navbar>
+              <Directory parks={this.state.parks}/>
+          </div>
+      );
+  }
 }
+
 
 export default App;
