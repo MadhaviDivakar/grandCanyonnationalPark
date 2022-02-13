@@ -48,10 +48,12 @@ class ParkInfo extends Component{
     render(){
         if (this.props.park){
         return(
-            <div className='row'>
-                {/* info is got as props from another component */}
-                {this.renderSelectedPark(this.props.park)}
-                {this.renderComments(this.props.park.comments)}
+            <div className='container'>
+                <div className='row'>
+                    {/* info is got as props from another component */}
+                    {this.renderSelectedPark(this.props.park)}
+                    {this.renderComments(this.props.park.comments)}
+                </div>
             </div>
         ); 
         }
