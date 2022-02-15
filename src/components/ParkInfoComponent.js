@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 
 
-class ParkInfo extends Component{
 
-    renderSelectedPark(park){
+   function RenderSelectedPark({park}){
         return(
             <div className='col-md-5  m-1'>
                 <Card>
@@ -16,10 +15,10 @@ class ParkInfo extends Component{
                     </CardBody>
                 </Card>
             </div>
-        )
+        );
 
     }
-    renderComments(comments){
+    function RenderComments({comments}){
         if (comments){
             return(
                 <div className="col-md-5 m-1">
@@ -45,14 +44,14 @@ class ParkInfo extends Component{
         return <div/>;
     }
    
-    render(){
-        if (this.props.park){
+    function ParkInfo(props){
+        if (props.park){
         return(
             <div className='container'>
                 <div className='row'>
                     {/* info is got as props from another component */}
-                    {this.renderSelectedPark(this.props.park)}
-                    {this.renderComments(this.props.park.comments)}
+                    <RenderSelectedPark park={props.park}/>
+                    <RenderComments comments= {props.park.comments}/>
                 </div>
             </div>
         ); 
@@ -60,5 +59,4 @@ class ParkInfo extends Component{
         return <div />;
     } 
     
-}
 export default ParkInfo;

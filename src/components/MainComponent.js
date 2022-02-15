@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import Directory from './DirectoryComponent';
 import ParkInfo from './ParkInfoComponent';
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import { PARKS } from '../shared/parks'
 
 class Main extends Component {
@@ -18,15 +19,11 @@ class Main extends Component {
   render() {
       return (
           <div>
-              <Navbar dark color="success">
-              <div className="container">
-                  <NavbarBrand href="/">NationalParks</NavbarBrand>
-              </div>
-              </Navbar>
+              <Header/>
               <Directory parks={this.state.parks} onClick={parkId=> this.onParkSelect(parkId)}/>
                {/* here you are rendering into different component */}
                <ParkInfo park = {this.state.parks.filter(park => park.id === this.state.selectedPark)[0]}/> 
-                
+              <Footer/>
                 
           </div>
       );
