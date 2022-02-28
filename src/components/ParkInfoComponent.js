@@ -51,7 +51,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
                 <div className='row'>
                     {/* info is got as props from another component */}
                     <RenderSelectedPark park={props.park}/>
-                    <RenderComments comments= {props.park.comments}/>
+                    <RenderComments comments= {props.comments}/>
                 </div>
             </div>
         ); 
