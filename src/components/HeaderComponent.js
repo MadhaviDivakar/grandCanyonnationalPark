@@ -34,7 +34,7 @@ class Header extends Component{
             <Navbar dark sticky="top" expand="md">
                 <div className="container">
                     <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" 
-                    height="30" width="30" alt="NationalPark Logo" /></NavbarBrand>
+                    height="20" width="20" alt="NationalPark Logo" /></NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar>
