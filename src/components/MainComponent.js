@@ -5,6 +5,7 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComonent';
+import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { PARKS } from '../shared/parks';
 import { CAMPSITES } from '../shared/parks';
@@ -50,6 +51,7 @@ class Main extends Component {
                   < Route exact path= '/directory' render= {()=><Directory parks={this.state.parks}/>}/>
                   <Route path='/directory/:parkId' component={ParkWithId} />
                   <Route exact path='/contactus' component={Contact} />
+                  <Route exact path='/aboutus' render= {() =><About partners={this.state.partners}/>}/>
                   <Redirect to='/home' />
               </Switch>
               <Footer/>
