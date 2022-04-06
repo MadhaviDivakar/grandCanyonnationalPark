@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, CardHeader } from 'reactstrap';
 
 
 
@@ -22,22 +22,25 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
         if (comments){
             return(
                 <div className="col-md-5 m-1">
-                    <h4>Comments</h4>
+                    {/* <h4>Lodging inside {comments.heading}</h4> */}
                     {comments.map(comment =>{
                         return(
+                            
                             <div key={comments.id}>
+                                <h2>Lodging inside {comment.heading}</h2>
                                 <p>
                                     {comment.text}
-                                    <div>
-                                    --{comment.author},
-                                        {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', 
-                                        day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
+                                    <div><br/>
+                                    <h3>{comment.place}:</h3>
+                                        {comment.resorts}
+                                        {/* {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', 
+                                        day: '2-digit'}).format(new Date(Date.parse(comment.date)))} */}
                                     </div>
-                                </p>
+                                </p> 
                             </div>
                         )
                     })
-                    }
+                    } 
                 </div>
             );
         }

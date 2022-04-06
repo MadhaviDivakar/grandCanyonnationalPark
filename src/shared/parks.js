@@ -1,32 +1,32 @@
 export const PARKS = [
     {
         id: 0,
-        name: "React Lake Campground",
-        image: "/assets/images/img1.jpg",
+        name: "North rim",
+        image: "/assets/images/northrim.png",
         elevation: 1233,
         featured: false,
         description: "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers."
     },
     {
         id: 1,
-        name:"Chrome River Campground ",
-        image: "/assets/images/img3.jpg",
+        name:"West rim",
+        image: "/assets/images/westrim.png",
         elevation: 877,
         featured: false,
         description: "Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River."
     },
     {
         id: 2,
-        name:"Breadcrumb Trail Campground",
-        image: "/assets/images/img4.jpg",
+        name:"South rim",
+        image: "/assets/images/southrim.png",
         elevation: 2901,
         featured: false,
-        description: "Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground."
+        description: "Located in Arizona, Grand Canyon National Park encompasses 277 miles (446 km) of the Colorado River and adjacent uplands. The immense Grand Canyon is a mile (1.6 km) deep, and up to 18 miles (29 km) wide. Layered bands of colorful rock reveal millions of years of geologic history with unmatched vistas from the rim. "
     },
     {
         id: 3,
-        name:"Redux Woods Campground",
-        image: "/assets/images/img6.jpeg",
+        name:"South rim",
+        image: "/assets/images/southrim2.png",
         elevation: 42,
         featured: false,
         description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."

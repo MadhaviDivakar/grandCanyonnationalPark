@@ -20,7 +20,7 @@ export const COMMENTS =
         id: 2,
         parkId: 0,
         rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
+        text: "South Rim lodging is available all year, and books up well in advance, especially during spring break, summer months, and fall weekends.",
         author: "McKenzie Sebastian",
         date: "2019-02-18T18:12Z"
     },
@@ -83,20 +83,20 @@ export const COMMENTS =
     {
         id: 10,
         parkId: 2,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
-    },
-    {
+        heading: "South Rim", 
+        text: "South Rim lodging is available all year, and books up well in advance, especially during spring break, summer months, and fall weekends.",
+        place: "Parks and Resorts",
+        resorts: "Bright Angel Lodge El Tovar Hotel Kachina Lodge Thunderbird Lodge Maswik Lodge"
+    }, 
+    /* {
         id: 11,
         parkId: 2,
         rating: 5, 
         text: "A wonderful place to reconnect with nature.",
         author: "Jordan Runn",
         date: "2019-08-04T20:11Z"
-    },
-    {
+    }, */
+    /* {
         id: 12,
         parkId: 2,
         rating: 4, 
@@ -119,7 +119,7 @@ export const COMMENTS =
         text: "The campground was beautiful, but the bugs could bite sometimes.",
         author: "Brennen Ech",
         date: "2017-06-17T03:33Z"
-    },
+    }, */
     {
         id: 15,
         parkId: 3,

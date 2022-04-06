@@ -25,8 +25,8 @@ class Header extends Component{
                 <div className='container'>
                     <div className='row'>
                         <div className='col'>
-                            <h1>National parks</h1>
-                            <h2>Choose the one you want to visit</h2>
+                            <h1>Grand Canyon National Park</h1>
+                            {/* <h2>Choose the one you want to visit</h2> */}
                         </div>
                     </div>
                 </div>
@@ -51,6 +51,11 @@ class Header extends Component{
                             <NavItem>
                                 <NavLink className="nav-link" to="/aboutus">
                                     <i className="fa fa-info fa-lg" /> About
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/giftshop">
+                                    <i className="fa fa-list fa-lg" /> Gift Shop
                                 </NavLink>
                             </NavItem>
                             <NavItem>

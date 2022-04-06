@@ -42,8 +42,8 @@ function About(props) {
             </div>
             <div className="row row-content">
                 <div className="col-sm-6">
-                    <h3>Our Mission</h3>
-                    <p>We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.</p>
+                    <h3>Grand Canyon National Park</h3>
+                    <p>Located in Arizona, Grand Canyon National Park encompasses 277 miles (446 km) of the Colorado River and adjacent uplands. The immense Grand Canyon is a mile (1.6 km) deep, and up to 18 miles (29 km) wide. Layered bands of colorful rock reveal millions of years of geologic history with unmatched vistas from the rim. </p>
                 </div>
                 <div className="col-sm-6">
                     <Card>
