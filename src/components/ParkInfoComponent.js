@@ -7,7 +7,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, CardHeade
         return(
             <div className='col-md-5  m-1'>
                 <Card>
-                    <CardImg top src={park.image} alt={park.name} />
+                    <CardImg top src={park.image}alt={park.name} />
                     <CardBody>
                         <CardTitle>{park.name}</CardTitle>
                         <CardText>{park.description}</CardText>
@@ -32,7 +32,11 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, CardHeade
                                     {comment.text}
                                     <div><br/>
                                     <h3>{comment.place}:</h3>
-                                        {comment.resorts}
+                                    {comment.resorts.split(",").map((line) => (
+                                        <div>{line}</div>
+                                            ))} <br/>
+                                    <h6>Online Reservations:</h6> {comment.reservation}
+                                        {/* {comment.resorts} */}
                                         {/* {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', 
                                         day: '2-digit'}).format(new Date(Date.parse(comment.date)))} */}
                                     </div>

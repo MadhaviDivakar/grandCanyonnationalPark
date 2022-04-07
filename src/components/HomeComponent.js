@@ -26,6 +26,22 @@ const items = [
     header: "",
     key: "3",
   },
+  {
+    src:
+    "/assets/images/carousel4.png",
+    altText: "Slide 3",
+    caption: "",
+    header: "",
+    key: "3",
+  },
+  {
+    src:
+    "/assets/images/carousel5.png",
+    altText: "Slide 3",
+    caption: "",
+    header: "",
+    key: "3",
+  },
 ];
 
 const Home = () => (
