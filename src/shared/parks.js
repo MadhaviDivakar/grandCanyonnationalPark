@@ -5,7 +5,7 @@ export const PARKS = [
         image: "/assets/images/northrim.png",
         elevation: 8000,
         featured: false,
-        description: "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers."
+        description: "The North Rim Campground is located on the North Rim of Grand Canyon National Park in northern Arizona. The canyon's rustic and less populated North Rim is home to abundant wildlife, hiking trails, and unparalleled views of one of the Seven Natural Wonders of the World. The facility is at an elevation of 8,200 ft., with pleasant summer temperatures and frequent afternoon thunderstorms."
     },
     {
         id: 1,
@@ -23,14 +23,6 @@ export const PARKS = [
         featured: false,
         description: "Located in Arizona, Grand Canyon National Park encompasses 277 miles (446 km) of the Colorado River and adjacent uplands. The immense Grand Canyon is a mile (1.6 km) deep, and up to 18 miles (29 km) wide. Layered bands of colorful rock reveal millions of years of geologic history with unmatched vistas from the rim. "
     },
-    /* {
-        id: 2,
-        name:"South rim",
-        image: "/assets/images/southrim2.png",
-        elevation: 7400,
-        featured: false,
-        description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
-    }, */
     {
         id: 4,
         name:"East rim",

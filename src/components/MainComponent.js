@@ -6,7 +6,7 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComonent';
-import About from './AboutComponent';
+// import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { PARKS } from '../shared/parks';
 import { COMMENTS } from '../shared/comments';
@@ -45,12 +45,6 @@ class Main extends Component {
       );
     }
 
-    // const GiftShop = ({match}) => {
-    //   return(
-    //     <GiftShop
-    //     giftshop={this.state.giftshops.filter(giftshop => giftshop.id === +match.params.giftshopId)[0]}/>
-    //   );
-    // } 
       return (
           <div>
               <Header/>
@@ -60,7 +54,7 @@ class Main extends Component {
                   <Route path='/directory/:parkId' component={ParkWithId} />
                   <Route path='/giftshop' render={()=><GiftShop articles={this.state.articles}/>}/> 
                   <Route exact path='/contactus' component={Contact} />
-                  <Route exact path='/aboutus' render= {() =><About partners={this.state.partners}/>}/>
+                  {/* <Route exact path='/aboutus' render= {() =><About partners={this.state.partners}/>}/> */}
                   <Redirect to='/home' />
               </Switch>
               <Footer/>
